@@ -1,0 +1,121 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.main {
+  display: flex;
+  gap: 50px;
+}
+
+.radialContainer {
+  background-image: url("https://picsum.photos/seed/1/600/400");
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.linearContainer {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.scrollContainer {
+  height: 400px;
+  overflow: scroll;
+}
+
+.bigChild {
+  background-image: url("https://picsum.photos/seed/1/600/400");
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.description {
+  padding: 0px 160px;
+  position: relative;
+  pointer-events: none;
+}
+
+.radialBlur {
+  position: absolute;
+  inset: -120px;
+  z-index: 0;
+  transform: scale(1.1);
+}
+
+.linearBlur {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.text2 {
+  color: transparent;
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px white;
+}
+
+.titleBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  pointer-events: none;
+
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
