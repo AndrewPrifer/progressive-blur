@@ -42,8 +42,8 @@ function RadialExample() {
 
   const tintString = `rgba(${tint.r}, ${tint.g}, ${tint.b}, ${tint.a})`;
 
-  const xSpring = useSpring(0, { stiffness: 300, damping: 30 });
-  const ySpring = useSpring(0, { stiffness: 300, damping: 30 });
+  const xSpring = useSpring(50, { stiffness: 300, damping: 30 });
+  const ySpring = useSpring(50, { stiffness: 300, damping: 30 });
   const backgroundSize = useSpring(105, { stiffness: 300, damping: 30 });
 
   const handleMouseMove = (event) => {
@@ -65,7 +65,11 @@ function RadialExample() {
       className="radialContainer"
       onPointerMove={handleMouseMove}
       onPointerEnter={() => backgroundSize.set(160)}
-      onPointerLeave={() => backgroundSize.set(105)}
+      onPointerLeave={() => {
+        backgroundSize.set(105);
+        xSpring.set(50);
+        ySpring.set(50);
+      }}
       style={{
         backgroundPosition: backgroundPosMV,
         backgroundSize: backgroundSizeMV,
