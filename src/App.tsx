@@ -18,7 +18,6 @@ function App() {
           <a href="https://issues.chromium.org/issues/40778541">here</a>.)
         </div>
       )}
-      <div className="rounded-rectangle" />
     </div>
   );
 }
