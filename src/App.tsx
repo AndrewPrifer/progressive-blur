@@ -162,7 +162,7 @@ function LinearExample() {
         }}
       />
 
-      <div className="titleBar">Perfectly Readable Title</div>
+      <div className="titleBar">Hello There</div>
     </div>
   );
 }
