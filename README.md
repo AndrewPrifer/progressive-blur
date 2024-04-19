@@ -2,6 +2,12 @@
 
 Drop-in progressive (gradient) backdrop blur for React. Both radial and linear gradients are supported.
 
+
+https://github.com/AndrewPrifer/progressive-blur/assets/2991360/9bcfaae7-5976-449b-994c-3785a0f961a1
+
+✨[Demo](https://progressive-blur.vercel.app/)✨
+
+
 ## Installation
 
 ```bash
