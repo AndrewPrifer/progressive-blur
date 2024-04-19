@@ -9,50 +9,57 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  height: 100%;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-content: center;
-  gap: 20px;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
 }
 
 .main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
+}
+
+/* Below 500px width */
+@media (max-width: 1250px) {
+  .main {
+    flex-direction: column;
+  }
 }
 
 .radialContainer {
   background-image: url("https://picsum.photos/seed/1/600/400");
-  width: 600px;
-  height: 400px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.linearContainer {
+.linearContainer,
+.radialContainer {
   position: relative;
-  width: 600px;
+  width: 80vw;
   height: 400px;
   box-sizing: border-box;
   overflow: hidden;
+  max-width: 600px;
 }
 
 .scrollContainer {
@@ -95,6 +102,7 @@ body {
   font-weight: 800;
   font-size: 1.5rem;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .text2 {
@@ -120,4 +128,14 @@ body {
   font-weight: 800;
   font-size: 1.2rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.githubLink {
+  color: white;
+  font-size: large;
+  font-weight: 800;
+}
+
+#leva__root {
+  display: none;
 }

@@ -6,6 +6,12 @@ import { useControls } from "leva";
 function App() {
   return (
     <div className="mainContainer">
+      <a
+        className="githubLink"
+        href="https://github.com/AndrewPrifer/progressive-blur"
+      >
+        GitHub
+      </a>
       <div className="main">
         <RadialExample />
         <LinearExample />
@@ -57,9 +63,9 @@ function RadialExample() {
   return (
     <motion.div
       className="radialContainer"
-      onMouseMove={handleMouseMove}
-      onMouseEnter={() => backgroundSize.set(160)}
-      onMouseLeave={() => backgroundSize.set(105)}
+      onPointerMove={handleMouseMove}
+      onPointerEnter={() => backgroundSize.set(160)}
+      onPointerLeave={() => backgroundSize.set(105)}
       style={{
         backgroundPosition: backgroundPosMV,
         backgroundSize: backgroundSizeMV,
