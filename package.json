@@ -30,7 +30,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsup"
+    "build": "tsup",
+    "build-vite": "vite build"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
