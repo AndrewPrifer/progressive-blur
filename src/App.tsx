@@ -144,7 +144,7 @@ function LinearExample() {
         <div className="bigChild">
           {Array.from({ length: 12 }).map((_, i) => (
             <div key={i} className="text2">
-              Scroll me
+              Scroll
             </div>
           ))}
         </div>
