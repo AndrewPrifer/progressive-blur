@@ -68,7 +68,7 @@ body {
 }
 
 .scrollContainer {
-  height: 400px;
+  height: 100%;
   overflow: scroll;
 }
 
