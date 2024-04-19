@@ -16,12 +16,18 @@ function App() {
         <RadialExample />
         <LinearExample />
       </div>
+      <span>
+        Made with ❤️ by{" "}
+        <a href="https://twitter.com/AndrewPrifer">Andrew Prifer</a> @{" "}
+        <a href="https://twitter.com/LumaLabsAI">Luma AI</a>
+      </span>
       {/* @ts-ignore */}
       {window.chrome && (
         <div>
           (Setting both <code>overflow: hidden</code> and border radius on
           ancestors of masked backdrop filters breaks in Chrome. Let them know{" "}
-          <a href="https://issues.chromium.org/issues/40778541">here</a>.)
+          <a href="https://issues.chromium.org/issues/40778541">here</a>
+          .)
         </div>
       )}
     </div>
@@ -136,18 +142,11 @@ function LinearExample() {
     >
       <div className="scrollContainer">
         <div className="bigChild">
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
-          <div className="text2">Scroll me</div>
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div key={i} className="text2">
+              Scroll me
+            </div>
+          ))}
         </div>
       </div>
 
