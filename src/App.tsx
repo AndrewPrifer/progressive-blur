@@ -32,10 +32,10 @@ function RadialExample() {
   const { strength, steps, falloffPercentage, size, tint } = useControls(
     "Radial blur",
     {
-      strength: { value: 64, min: 0, max: 128 },
+      strength: { value: 32, min: 0, max: 128 },
       steps: { value: 8, min: 2, max: 16 },
       falloffPercentage: { value: 85, min: 0, max: 100 },
-      size: { value: 130, min: 0, max: 200 },
+      size: { value: 100, min: 0, max: 200 },
       tint: { r: 200, b: 125, g: 106, a: 0 },
     }
   );

@@ -59,8 +59,8 @@ body {
 .linearContainer,
 .radialContainer {
   position: relative;
-  width: 80vw;
-  height: 400px;
+  width: 90vw;
+  aspect-ratio: 3 / 2;
   box-sizing: border-box;
   overflow: hidden;
   max-width: 600px;
@@ -104,7 +104,7 @@ body {
   z-index: 1;
   color: white;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   white-space: nowrap;
 }
