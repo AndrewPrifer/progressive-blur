@@ -64,7 +64,10 @@ function RadialExample() {
     <motion.div
       className="radialContainer"
       onPointerMove={handleMouseMove}
-      onPointerEnter={() => backgroundSize.set(160)}
+      onPointerEnter={(e) => {
+        backgroundSize.set(160);
+        handleMouseMove(e);
+      }}
       onPointerLeave={() => {
         backgroundSize.set(105);
         xSpring.set(50);
