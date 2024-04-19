@@ -38,6 +38,10 @@ body {
   .main {
     flex-direction: column;
   }
+
+  #leva__root {
+    display: none;
+  }
 }
 
 .radialContainer {
@@ -134,8 +138,4 @@ body {
   color: white;
   font-size: large;
   font-weight: 800;
-}
-
-#leva__root {
-  display: none;
 }
