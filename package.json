@@ -13,7 +13,7 @@
   "repository": "AndrewPrifer/progressive-blur",
   "bugs": "https://github.com/AndrewPrifer/progressive-blur/issues",
   "homepage": "https://github.com/AndrewPrifer/progressive-blur",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist"
